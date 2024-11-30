@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto AgroTour</title>
+    <link rel="icon" href="/images/reservas/icon.png">
+</head>
+
+<body>
+    <header>
+        <h1>Proyecto AgroTour</h1>
+    </header>
+
+    <section>
+        <main>
+            <div class="container">
+                <div class="box" id="box1">
+                    <a href="/src/crear-convenio/convenio.html">
+                        <img src="/images/crear-convenio/convenio.jpg" alt="Creación Convenio">
+                        <p>Creación Convenio</p>
+                    </a>
+            </div>
+            <div class="box" id="box2">
+                <ul> 
+                    <a href="/src/paquete-turistico/1Pqtur.html">
+                    <img src="https://www.entornoturistico.com/wp-content/uploads/2018/06/paquete-tur%C3%ADstico.jpg" alt="Paquete Turistico">
+                    <p>Paquete Turistico</p>
+                    </a>
+                </ul>
+            </div>
+            <div class="box" id="box3">
+                <a href="/src/reservas/reserva.html">
+                    <img src="https://www.newdesigns.com.mx/wp-content/uploads/2022/05/istockphoto-518678108-170667a.jpg" alt="Sistema_de_reserva_en_linea">
+                    <p>Sistema de reserva en linea</p>
+                </a>
+            </div>
+            <div class="box" id="box4">
+                <a href="/src/pago-en-linea/online_payment.html">
+                    <img src="https://inversionespomar.com/wp-content/uploads/2020/10/ahora-puedes-pagar-en-linea-1-800x400.jpg" alt="Pagos_en_linea">
+                    <p>Pagos en linea</p>
+                </a>
+            </div>
+            
+            </main>
+        </section>
+
+    <footer>
+        <p>SENA - Tecnología en Desarrollo de Software</p>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    body {
+        background-color: rgb(230, 240, 227);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+    }
+
+    header {
+        background-color: gray;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin: 100;
+        padding: 2100;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(242, 246, 234);
+    border-radius: 8px;
+    }           
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        background-color: rgb(242, 246, 234);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .box {
+        background-color: rgba(66, 127, 58, 0.881);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .box:hover {
+        transform: scale(1.05);
+    }
+
+    .box img {
+        width: 40%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .box p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: rgb(145, 236, 132);
+    }
+
+    .box a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    footer {
+        background-color: gray;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+</style>

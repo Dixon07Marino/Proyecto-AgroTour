@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/reservas/icon.png">
+    <title>Crear Paquete Turístico</title>
+    <style>
+        body {
+            background-color: rgb(230, 240, 227);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            justify-content: flex-end;
+        }
+        header {
+            background-color: grey;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header button {
+            background-color: rgb(235, 218, 25);
+            color: rgba(127, 127, 58, 0.881);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form-container {
+            background-color: rgb(242, 246, 234);
+            border: 1px solid rgba(66, 127, 58, 0.881);
+            padding: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        
+        .form-container h2 {
+            color: rgba(66, 127, 58, 0.881);
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+            color: rgba(66, 127, 58, 0.881);
+        }
+        .form-container input, .form-container textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: rgb(242, 246, 234);
+            border: 1px solid rgba(66, 127, 58, 0.881);
+            border-radius: 3px;
+        }
+        fieldset {
+            border: 2px solid rgba(66, 127, 58, 0.881);
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .form-container button {
+            width: 100%;
+            background-color: rgb(235, 218, 25);
+            color: rgba(127, 127, 58, 0.881);
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        footer {
+            background-color: rgba(66, 127, 58, 0.881);
+            color: rgb(145, 236, 132);
+            text-align: center;
+            padding: 50px 0;
+            margin: 50PX;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        feColorMatrix{
+            margin-bottom: 20px;background-color: rgba(66, 127, 58, 0.881);
+            color: rgb(145, 236, 132);
+            text-align: center;
+            padding: 50px 0;
+            margin: 50PX;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        fieldset {
+        border: 2px solid rgba(66, 127, 58, 0.881);
+        padding: 15px;
+        border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Agro Tour</h1>
+    <a href="/public/index.html"><button onclick="goToHome()">Home</button></a>
+</header>
+
+<div class="form-container">
+    <h2>Creación de Paquete Turístico</h2>
+    <form id="1">
+            <legend>Nombre del Paquete</legend>
+            <section>
+                <option>Paquete Turistico Playa</option>
+                <option>Zona Cafetera</option>
+                <option>Tropical</option>
+                <option>Selva</option>
+            </section>
+            </form>
+    <form>
+        <label for="packageName">Nombre del Paquete:</label>
+        <input type="text" id="packageName" name="packageName">
+
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="destination">Destino:</label>
+        <input type="text" id="destination" name="destination">
+
+        <label for="duration">¿Cuántos dias dura tu reserva?:</label>
+        <input type="text" id="duration" name="duration">
+
+        <a href="2itinerario.html"><button type="button">Continuar</button></a>
+
+    </form>
+
+    
+</div>
+<div>
+    <footer>
+        SENA  Tecnólogo en Análisis y Desarrollo de Software
+    </footer>
+</div>
+<script>
+    function goToHome() {
+        // Logic to navigate to home page
+        window.location.href = "/public/index.html"; // Example: replace with the actual home page URL
+    }
+</script>
+

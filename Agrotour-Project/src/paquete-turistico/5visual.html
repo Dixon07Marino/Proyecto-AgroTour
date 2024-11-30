@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos y Descripción Visual</title>
+    <link rel="icon" href="/images/reservas/icon.png">
+</head>
+<body>
+    <main>
+        <!-- Primera Sección: Formularios -->
+        <div class="form-container">
+            <div class="form-box">
+                <!-- Formulario 1: Carrusel de Imágenes -->
+                <div id="carousel" class="carousel">
+                    <img src="/images/reservas/destino-1.png" alt="Imagen de la Finca 1" onclick="showDescription('desc1')">
+                    <img src="https://www.uniquecolombia.com/wp-content/uploads/2012/04/finca-hermosa-quindio.jpg" alt="Imagen de la Finca 2" onclick="showDescription('desc2')">
+                    <img src="https://www.todoparacafe.com/media/user_4ndKGRzMmZ/2122/5807138613253127_tmp_Finca-cafetera-a-la-venta---La-Florida.jpeg" alt="Imagen de la Finca 3" onclick="showDescription('desc3')">
+                    <img src="https://volcanicacoffee.com/cdn/shop/products/VC-FincaLasMercedes-Natural-Opt1.jpg?v=1660678916" alt="Imagen de la Finca 4" onclick="showDescription('desc4')">
+                    <img src="https://www.fincasairepuro.com/baru/habitacion_mar.jpg" alt="Imagen de la Finca 5" onclick="showDescription('desc5')">
+                    <img src="https://www.cartagenacaribe.com/fotos/fincaraiz/p/puertadelmar1.jpg" alt="Imagen de la Finca 6" onclick="showDescription('desc6')">
+            
+                </div>
+                <!-- Formulario 2: Descripción de la Finca -->
+                <div id="description-box">
+                    <p id="desc1" class="description">Descripción de la Finca 1</p>
+                    <p id="desc2" class="description">Descripción de la Finca 2</p>
+                    <p id="desc3" class="description">Descripción de la Finca 3</p>
+                    <p id="desc3" class="description">Descripción de la Finca 4</p>
+                    <p id="desc3" class="description">Descripción de la Finca 5</p>
+                    <p id="desc3" class="description">Descripción de la Finca 6</p>
+                </div>
+            </div>
+            <button class="finalizar-btn">Finalizar</button>
+        </div>
+
+        <!-- Segunda Sección: Botones -->
+        <div class="button-container">
+            <div class="button-box">
+                <button class="action-btn">Cancelar</button>
+                <button class="action-btn">Visualizar</button>
+                <button class="action-btn">Crear paquete</button>
+            </div>
+            <div class="reserve-box">
+                <button class="reserve-btn">Reservar ahora</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function showDescription(id) {
+            const descriptions = document.querySelectorAll('.description');
+            descriptions.forEach(desc => desc.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+
+        // Mostrar la primera descripción por defecto
+        showDescription('desc1');
+    </script>
+</body>
+</html>
+
+
+<style>
+
+body {
+    background-color: rgb(230, 240, 227);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form-container {
+    background-color: rgb(242, 246, 234);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.carousel img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+#description-box {
+    margin-top: 20px;
+}
+
+.description {
+    display: none;
+    font-size: 16px;
+    color: rgba(66, 127, 58, 0.881);
+}
+
+.finalizar-btn {
+    background-color: rgb(235, 218, 25);
+    color: rgba(127, 127, 58, 0.881);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.finalizar-btn:hover {
+    background-color: rgba(235, 218, 25, 0.8);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.button-box, .reserve-box {
+    background-color: rgb(242, 246, 234);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.action-btn, .reserve-btn {
+    background-color: rgba(66, 127, 58, 0.881);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.action-btn:hover, .reserve-btn:hover {
+    background-color: rgba(66, 127, 58, 0.8);
+}
+</style>

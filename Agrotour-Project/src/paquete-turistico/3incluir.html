@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3Incluir elementos del paquete agroturístico</title>
+    <link rel="icon" href="/images/reservas/icon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Incluir elementos del paquete agroturístico</h1>
+        
+        <!-- Formulario 1: Alojamiento -->
+        <form>
+            <fieldset>
+                <legend>Alojamiento</legend>
+                <label><input type="checkbox"> Habitación en la granja</label><br>
+                <label><input type="checkbox"> Cabaña rústica</label><br>
+                <label><input type="checkbox"> Tienda de campaña</label>
+            </fieldset>
+        </form>
+
+        <!-- Formulario 2: Alimentación -->
+        <form>
+            <fieldset>
+                <legend>Alimentación</legend>
+                <label><input type="radio" name="alimentacion"> Desayuno incluido</label><br>
+                <label><input type="radio" name="alimentacion"> Media pensión</label><br>
+                <label><input type="radio" name="alimentacion"> Pensión completa</label>
+            </fieldset>
+        </form>
+
+        <!-- Formulario 3: Actividades en la granja -->
+        <form>
+            <fieldset>
+                <legend>Actividades en la granja</legend>
+                <select>
+                    <option>Avistamiento de aves</option>
+                    <option>Visita al huerto</option>
+                    <option>Paseo en el tractor</option>
+                    <option>Clase de cocina tradicional</option>
+                    <option>Elaboración de café</option>
+                </select>
+            </fieldset>
+        </form>
+
+        <!-- Formulario 4: Visitas y excursiones -->
+        <form>
+            <fieldset>
+                <legend>Visitas y excursiones</legend>
+                <label><input type="checkbox"> Ruta de senderismo</label><br>
+                <label><input type="checkbox"> Museo regional</label><br>
+                <label><input type="checkbox"> Mercadeo de agricultores</label><br>
+                <label><input type="checkbox"> Visita a cafetales</label><br>
+                <label><input type="checkbox"> Visita mariposario</label>
+            </fieldset>
+        </form>
+
+        <!-- Formulario 5: Servicios adicionales -->
+        <form>
+            <fieldset>
+                <legend>Servicios adicionales</legend>
+                <label><input type="checkbox"> Transporte desde el aeropuerto</label><br>
+                <label><input type="checkbox"> Guía turística</label><br>
+                <label><input type="checkbox"> Taller de elaboración de quesos</label><br>
+                <label><input type="checkbox"> Más opciones</label>
+            </fieldset>
+        </form>
+
+        <!-- Formulario 6: Tiempo libre -->
+        <form>
+            <fieldset>
+                <legend>Tiempo libre</legend>
+                <label><input type="checkbox"> Acceso a la piscina</label><br>
+                <label><input type="checkbox"> Baños en termales</label><br>
+                <label><input type="checkbox"> Bicicletas disponibles</label><br>
+                <label><input type="checkbox"> Senderismo para caminar en la propiedad</label><br>
+                <label><input type="checkbox"> Más opciones</label>
+            </fieldset>
+        </form>
+
+        <!-- Formulario 7: Más opciones -->
+        <form>
+            <fieldset>
+                <legend>Más opciones</legend>
+                <label>Especifica qué es lo que quieres:</label><br>
+                <textarea rows="4" cols="50"></textarea>
+            </fieldset>
+        </form>
+        <a href="2itinerario.html"><button type="button">Regresar</button></a>
+        <a href="4reserva.html"><button type="button">Continuar</button></a>
+    </div>
+    <footer>
+        SENA - Tecnólogo en Análisis y Desarrollo de Software
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    background-color: rgb(230, 240, 227);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgba(66, 127, 58, 0.881);
+    justify-content: flex-end;
+}
+
+header{
+    background-color: grey;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+header button {
+background-color: rgb(235, 218, 25);
+color: rgba(127, 127, 58, 0.881);
+padding: 10PX 20px;
+border: none;
+cursor: pointer;
+margin-top: 10px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(242, 246, 234);
+    border-radius: 8px;
+}
+
+h1 {
+    color: rgba(66, 127, 58, 0.881);
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+fieldset {
+    border: 2px solid rgba(66, 127, 58, 0.881);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: rgba(66, 127, 58, 0.881);
+}
+
+label {
+    color: rgba(66, 127, 58, 0.881);
+}
+
+textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid rgba(66, 127, 58, 0.881);
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid rgba(66, 127, 58, 0.881);
+    background-color: rgb(242, 246, 234);
+    color: rgba(66, 127, 58, 0.881);
+}
+
+input[type="submit"], button {
+    background-color: rgb(235, 218, 25);
+    color: rgba(127, 127, 58, 0.881);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: rgba(235, 218, 25, 0.8);
+}
+footer {
+    background-color: rgba(66, 127, 58, 0.881);
+    color: rgb(145, 236, 132);
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+</style>

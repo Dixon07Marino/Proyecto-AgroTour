@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotour</title>
+    <link rel="stylesheet" href="online_payment.css" type="text/css">
+    <link rel="icon" href="/images/reservas/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+<div id="pasarela-de-pagos">
+    <h2 class="titles">Ingresa los datos de tu tarjeta</h2>
+    <div class="medios-de-pago">
+    <label for="logo">Selecciona tu tarjeta de crédito</label>
+    <img id="company-icon" class="logo" src="/images/pago-en-linea/icons8-paypal.svg" alt="Logo de Paypal">
+    <img id="company-icon2" class="logo" src="/images/pago-en-linea/icons8-mastercard.svg" alt="Lodo de Mastercard">
+    <img id="company-icon3" class="logo" src="/images/pago-en-linea/icons8-visa.svg" alt="Logo de Visa">
+    </div>
+<div id="card-info">
+    <br>
+    <label for="input">Número de tarjeta</label>
+    <input class="card"id="card-numb"type="text"placeholder="xxxx xxxx xxxx xxxx">
+    <label for="input">Fecha de vencimiento</label>
+    <input class="card"id="card-date"type="date">
+    <label for="input">Nombre del titular</label>
+    <input class="card"id="card-name"type="text">
+    <label for="input">Código de seguridad</label>
+    <input class="card"id="card-code"type="text">
+    <label for="input">Código de seguridad</label>
+    <input class="card"id="card-code"type="text">
+</div>
+<div class="button-section">
+    <input id="save-reserve-info" value="Guardar información" type="button">
+    <input id="calculate-reserve-price" value="Realizar compra" type="button">
+  </div>  
+</div>
+</div>
+<script src="online-payment.js"></script>
+</body>
+</html>

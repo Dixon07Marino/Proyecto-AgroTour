@@ -1,0 +1,240 @@
+ body {
+            font-family: "Alata", sans-serif;
+            margin: 0;
+            padding: 0;
+			background-color: rgb(230, 240, 227);
+			
+			/*Cajas de los formularios: rgb(242, 246, 234)
+			Fondo:rgb(230, 240, 227)
+			Verde principal: rgba(66, 127, 58, 0.881)
+			Textos claros: rgb(145, 236, 132)
+			Amarillo botón activo: rgb(235, 218, 25)
+			Letra botón activo: rgba(127, 127, 58, 0.881)*/
+			
+        }
+         nav {
+    background-color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+	}
+
+	.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+	}
+
+	.nav-logo img {
+    height: 40px;  /* Ajusta esto según el tamaño de tu logo */
+    width: auto;
+    padding: 5px 0;
+	}
+
+	.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+	}
+
+	.nav-links li {
+    margin: 0 5px;
+	}
+
+	.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: block;
+	}
+
+	.nav-links a:hover {
+    background-color: #8DED98;
+	transform: scale(1.1);
+	transition: background-color 0.3s, transform 0.3s;
+	}
+	
+	.alata-regular {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+		 #titulo{
+			 text-align: center;
+			 color: white;
+			 /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
+			 font-size: 30px;
+			 background: rgb(35, 154, 20);
+			 padding: 10px;
+			 text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+			 
+		 }
+		 #titulo2{
+			 text-align: center;
+			 font-size: 15px;
+			 text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+			 color: rgb(145, 236, 132);
+			 
+		 }
+		 
+		 #subtitulo{
+			 text-align: center;
+			 font-size: 15px;
+			 text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+			 color: rgb(145, 236, 132);
+			
+		 }
+		 
+		 .container1 {
+            max-width: 1000px;
+            margin: auto;
+            padding: 10px;
+            border: 3px solid rgb(145, 236, 132);
+            border-radius: 15px;
+			background-color: rgb(35, 154, 20);
+
+        }
+		
+        .input_group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+			color: white;
+			margin-left: 40px;
+        }
+        input[type="text"] {
+            width: 92%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+			background-color: #8DED98;
+			font-family: "Bree Serif", serif;
+			padding-left: 10px;
+			margin-left: 16px;
+		}
+		
+		textarea{
+            width: 92%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            resize: vertical; 
+            height: 150px; 
+			background-color: #8DED98;
+			font-family: "Bree Serif", serif;
+			margin-left: 38px;
+        }
+        imput[type="date"] {
+			padding: 3px;
+			
+		}
+		#fecha, #fecha2{
+			text-align: center;
+			padding-right: 20px;
+			padding-left: 10px;
+		}
+		
+		#comidas{
+			text-align: center;
+			padding-right: 20px;
+			margin-left: -10px;
+			cursor: pointer;
+		}
+		#comidas2{
+			cursor: pointer;
+		}
+		#imagenText {
+			font-weight: none;
+			font-size: 18px;
+		}
+		#subirImagen {
+			padding-top: 0px;
+			font-weight: none;
+			font-size: 16px;
+			
+		}
+		
+		.number-campo {
+			text-align: left;
+			padding-right: 5px;
+			padding-left: 10px;
+			background-color: #8DED98;
+			font-family: "Bree Serif", serif;
+			width: 250px;
+			margin-left: 15px;
+		}
+		#enviar {
+			text-align: center;
+			font-family: "Bree Serif", serif;
+		}
+		.enviarBoton {
+			background-color: rgb(145, 236, 132); 
+			border: none; 
+			color: rgba(66, 127, 58, 0.881); 
+			padding: 10px 32px; 
+			text-align: center; 
+			text-decoration: none; 
+			display: inline-block; 
+			font-size: 16px; 
+			margin: 2px 2px; 
+			cursor: pointer; 
+			border-radius: 8px; 
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s, transform 0.3s;
+		}
+		.enviarBoton:hover {
+		background-color: white; /* Color al pasar el cursor */
+		transform: scale(1.1); /* Aumenta el tamaño en un 10% */
+		}
+		.correoElec {
+			text-align: left;
+			padding-right: 5px;
+			padding-left: 10px;
+			background-color: #8DED98;
+			font-family: "Bree Serif", serif;
+			width: 250px;
+			margin-left: 15px;
+		}
+	i {
+		margin-left: 9px;
+		margin-right: -3px;
+		color: white;
+	}
+	label[for="fecha"], label[for="fecha2"] {
+		margin-left: 0px;
+	}
+	.linkCondiciones {
+		margin-left: 66px;
+	}
+	.terminosBoton {
+			background-color: white; 
+			border: none; 
+			color: blue; 
+			padding: 10px 18px; 
+			text-decoration: none; 
+			display: inline-block; 
+			font-size: 13px; 
+			margin: 2px 2px; 
+			cursor: pointer; 
+			border-radius: 0px; 
+			margin-left: 55px;
+			
+		}
+		link-condiciones {
+			text-align: center;
+		}
+		.checkbox-container {
+            display: flex;
+            align-items: center;
+        }
+		#aceptar {
+			margin-left: 10px;
+			margin-right: -20px;
+		}

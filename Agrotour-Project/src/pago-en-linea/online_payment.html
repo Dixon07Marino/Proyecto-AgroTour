@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotour</title>
+    <link rel="stylesheet" href="online_payment.css" type="text/css">
+    <link rel="icon" href="/images/reservas/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<form id="pasarela-de-pagos">
+    <hr>
+<div id="reserva">
+    <div id="inicio_reserva">
+    <label>INICIO DE RESERVA</label>
+    <input type="date"id="reserve-beginning"required>
+    </div>
+ <br>
+    <div id="fin_reserva">
+    <label>FIN DE RESERVA</label>
+    <input id="reserve-end"type="date"required>
+    </div>
+ <br>
+    <div id="cantidad_personas">
+    <label>CANTIDAD DE PERSONAS</label>
+    <input id="costumers-amount"placeholder="..."type="number"min="0"required>
+    </div>
+<br>
+</div>
+<h2 class="titles">Actividades Agroturísticas</h2>
+<div class="actividades"id="agroactividades">
+    <label id="horse-ride"class="title">Cabalgata</label>
+    <div id="horseContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value1"class="reserve-input"type="number"min="0"placeholder="0"required>
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value1"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $40.000</span>
+        <input id="add-item"class="add-button"value="Añadir"type="button">
+        <input id="remove-item"class="remove-choice"value="Eliminar"type="button">
+    </div>
+    <label id="butterfly-farm"class="title">Mariposario</label>
+    <div id="butterflyContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value2"class="reserve-input"type="number"min="0"placeholder="0"required>
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value2"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $20.000</span>
+        <input id="add-item2"class="add-button"value="Añadir" type="button">
+        <input id="remove-item2"class="remove-choice"value="Eliminar"type="button">
+    </div>
+    <label class="title">Avifauna</label>
+    <div id="avifaunaContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value3"class="reserve-input"type="number"min="0"placeholder="0"required>
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value3"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $60.000</span>
+        <input id="add-item3"class="add-button"value="Añadir"type="button">
+        <input id="remove-item3"class="remove-choice"value="Eliminar"type="button">
+   </div>
+</div>
+<h2 class="titles">Servicios de Hospedaje</h2>
+<div id="lodging-services">
+    <label for="ul">Baño</label>
+    <ul>
+    <li>Elementos de aseo personal</li>
+    <li>Jacuzzi</li>
+    <li>Ducha</li>
+    </ul>
+    <label for="ul">Cuarto Hasta 4 personas</label>
+    <ul>
+    <li>Dos camas</li>
+    <li>Conexión WiFi</li>
+    <li>Televisión</li>
+    <li>Armario</li>
+    <li>Vestidor</li>
+    </ul>
+</div>
+  <h2 class="titles">Actividades Adicionales</h2>
+  <div class="actividades">
+    <label class="title">Guía Básica de Fotografía</label>
+    <div id="photGuideContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value4"class="reserve-input"type="number"min="0"placeholder="0">
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value4"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $8.000</span>
+        <input id="add-item4"class="add-button"value="Añadir"type="button">
+        <input id="remove-item4"class="remove-choice"value="Eliminar"type="button">
+    </div>
+    <label class="title">Cosecha de café</label>
+    <div id="coffeeHarvContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value5"class="reserve-input"type="number"min="0"placeholder="0">
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value5"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $15.000</span>
+        <input id="add-item5"class="add-button"value="Añadir"type="button">
+        <input id="remove-item5"class="remove-choice"value="Eliminar"type="button">
+    </div>
+    <label class="title">Alimentación de Potros</label>
+    <div id="foalFeedContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value6"class="reserve-input"type="number"min="0"placeholder="0">
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value6"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $12.000</span>
+        <input id="add-item6"class="add-button"value="Añadir"type="button">
+        <input id="remove-item6"class="remove-choice"value="Eliminar"type="button">
+   </div>
+   <label class="title">Aguas termales</label>
+   <div id="thermalWatContainer" class="activity">
+       <label for="reserve-input">Cantidad</label>
+       <input id="entry-value7"class="reserve-input"type="number"min="0"placeholder="0">
+       <label for="reserve-input">Valor total</label>
+       <input id="exit-value7"class="reserve-input"type="text"placeholder="0"readonly>
+       <span class="price">Valor: $40.000</span>
+       <input id="add-item7"class="add-button"value="Añadir"type="button">
+       <input id="remove-item7"class="remove-choice"value="Eliminar"type="button">
+  </div>
+  <label class="title">Pesca</label>
+    <div id="fishingContainer" class="activity">
+        <label for="reserve-input">Cantidad</label>
+        <input id="entry-value8"class="reserve-input"type="number"min="0"placeholder="0">
+        <label for="reserve-input">Valor total</label>
+        <input id="exit-value8"class="reserve-input"type="text"placeholder="0"readonly>
+        <span class="price">Valor: $20.000</span>
+        <input id="add-item8"class="add-button"value="Añadir"type="button">
+        <input id="remove-item8"class="remove-choice"value="Eliminar"type="button">
+  </div>
+  <div>
+    <p id="error-messege"class="mistake">Los campos obligatorios no se han llenado, por favor,, diligencie la información para continuar</p>
+  </div>
+  </div>
+  <div class="button-section">
+    <input id="save-reserve-info" value="Guardar información" type="button">
+    <input id="calculate-reserve-price" value="Calcular total" type="button">
+  </div>
+</form>
+<div id="purchase-info">
+    <div id="purchase-content">
+        <h2 class="titles">Valor total de la reserva</h2>
+        <div id="dateStartData"class="dataContainer">
+            <span>Fecha de inicio de reserva: </span>
+        </div>
+        <div id="dateEndData"class="dataContainer">
+            <span>Fecha de finalización de la reserva: </span>
+        </div>
+        <div id="amountCostumsData"class="dataContainer">
+            <span>Cantidad de personas: </span>
+        </div>
+        <div id="horseRideData"class="dataContainer">
+            <span>Número de cabalgatas: </span>
+        </div>
+        <div id="butterflyData"class="dataContainer">
+            <span>Número de entradas al mariposario: </span>
+        </div>
+        <div id="avifaunaData"class="dataContainer">
+            <span>Número de visitas a avifauna: </span>
+        </div>
+        <div id="photoData"class="dataContainer">
+            <span>Guías básicas de Fotografía: </span>
+        </div>
+        <div id="coffeeData"class="dataContainer">
+            <span>Entradas a la cosecha de café: </span>
+        </div>
+        <div id="foalData"class="dataContainer">
+            <span>Alimentación de potros: </span>
+        </div>
+        <div id="thermalData"class="dataContainer">
+            <span>Entradas a las aguas termales: </span>
+        </div>
+        <div id="fishData"class="dataContainer">
+            <span>Pescas programadas: </span>
+        </div>
+        <div>
+            <span>Valor estándar de la reserva: $120000 </span>
+        </div>
+        <div id="totalCost">
+        <h2> Valor total: </h2>
+        </div>
+        <img id="close-modal" src="/images/pago-en-linea/x.png" alt="cerrar">
+    </div>
+</div>
+<script src="online-payment.js"></script>
+</body>
+</html>

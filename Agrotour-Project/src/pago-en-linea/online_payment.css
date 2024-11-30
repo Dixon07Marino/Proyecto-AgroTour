@@ -1,0 +1,327 @@
+body {
+    background:rgb(230, 240, 227);
+    color:rgb(5, 49, 1);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style: oblique;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    padding:4px;
+}
+	
+label{
+    font-size:14px;
+    padding:8px;
+}
+
+input{
+    background-color:rgb(229, 237, 219);
+    border-color:rgb(126, 224, 88);
+    border-radius: 6px;
+    border-style:outset;
+    color:rgb(37, 162, 21);
+    transition: 0.23s;
+    text-align: center;
+}
+
+input:hover{
+    background-color:rgb(174, 215, 159);
+    color:rgb(102, 174, 74);
+}
+
+.card{
+    padding:4px;
+    margin:3px
+}
+
+#reserva{
+    justify-content:center;
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(242, 246, 234);
+    padding: 8px;
+    transition:0.25s; 
+}
+
+#reserva:hover{
+    box-shadow: 2px 4px 5px rgb(205, 220, 199);
+}
+
+.titles{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(35, 154, 20);
+    padding:4px;
+    margin:2px;
+    font-size:20px
+}
+
+.titles::after{
+    content:"";
+    position:absolute;
+    background-image:url("/images/pago-en-linea/hoja.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:inline-block;
+    margin-left:4px;
+    width:24px;
+    height:24px;
+}
+
+.actividades{
+    background-color:rgb(242, 246, 234);
+    width:98%;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    justify-items:center;
+    transition:0.25s; 
+}
+
+.actividades:hover{
+    box-shadow: 2px 4px 5px rgb(205, 220, 199);
+}
+
+.activity{
+    background-color: rgb(35, 154, 20);
+    color:rgb(145, 236, 132);
+    border-bottom-color: rgb(145, 236, 132);
+    padding:4px;
+    margin:2px auto;
+    border-radius: 8px;
+    width:70%;
+}
+
+.activity:hover{
+    border-bottom: 22px;
+}
+
+.title{
+    background:rgb(237, 245, 235);
+    padding:4px;
+    width:200px;
+    text-align:center;
+    justify-self: center;
+    margin:4px;
+    color:rgb(9, 71, 4);
+    font-size:14px;
+}
+
+.reserve-input{
+    background:rgb(174, 215, 159);
+    border-color:rgb(108, 194, 74);
+    width:100px;
+    margin:2px auto;
+}
+
+.reserve-input:hover{
+    background:rgb(138, 188, 108);
+    color:rgb(32, 116, 21)
+}
+
+.price{
+    font-size:15px;
+    padding:6px;
+}
+
+.section-input{
+    justify-content:center;
+    padding:5px;
+}
+
+.button-section{
+    justify-content:left;
+    align-content:center;
+    padding:3px;
+    margin-top:10px;
+}
+
+.services{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:rgb(38, 170, 26);
+    margin:14px
+}
+
+.medios-de-pago{
+    background:rgb(237, 245, 235);
+    display:flex;
+    flex-direction:row;
+    transition:0.25s; 
+    justify-content: center;
+    width:98%;
+    padding:10px;
+}
+
+.medios-de-pago:hover{
+    box-shadow: 2px 4px 5px rgb(205, 220, 199);
+}
+
+.logo{
+    width:78px;
+    height:78px;
+    margin:6px;
+    padding:4px;
+    transition:0.24s
+}
+
+.logo:hover{
+    box-shadow:0px 2px 3px rgb(115, 239, 115);
+    cursor:pointer;
+}
+
+.success{
+    justify-content: center;
+    padding:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    color:rgb(115, 239, 115);
+    text-align:center;
+    transition:0.23s;
+}
+
+.mistake{
+    background-color: rgb(250, 50, 60);
+    justify-content: center;
+    padding:6px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:14px;
+    color:rgb(161, 31, 31);
+    text-align:center;
+    transition:0.23s;
+    border-radius:3px;
+    border-style:hidden;
+    transform:none;
+    transition:0.23s;
+}
+
+.add-button{
+    background-color: rgb(58, 197, 45);
+    margin-left:2px;
+    padding:8px;
+}
+.remove-choice{
+    background-color:rgb(250, 50, 60);
+    color:rgb(161, 31, 31);
+    border-color:rgb(255, 106, 0);
+    padding:5px;
+    margin:0px;
+    display:none;
+}
+.remove-choice:hover{
+    background-color:rgb(252, 131, 115);
+    color:rgb(193, 77, 77);
+    cursor:pointer;
+}
+
+.add-button{
+    cursor:pointer;
+}
+.dataContainer{
+    display:flex;
+    flex-direction: row;
+    text-align:left;
+    margin:auto;
+    padding:2px;
+}
+
+.info{
+    color:rgb(58, 197, 45);
+    padding:4px;
+    margin-left: 10px;
+}
+
+#error-messege{
+    display: none;
+    transition: 0.23s;
+}
+
+#save-reserve-info{
+    background-color: rgb(35, 154, 20);
+    color:rgb(145, 236, 132);
+    border-style: hidden;
+    padding:10px;
+    border-radius: 9px;
+    transition:0.23s ease;
+}
+
+#save-reserve-info:hover{
+    background-color: rgb(50, 235, 25);
+    color:rgba(66, 127, 58, 0.881);
+    cursor:pointer;
+}
+
+#lodging-services{
+    background-color:rgb(242, 246, 234);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    padding:4px;
+    color:rgb(38, 170, 26);
+    margin:14px
+}
+
+#calculate-reserve-price{
+    background-color: rgb(156, 147, 20);
+    color:rgb(229, 236, 132);
+    cursor:pointer;
+    border-style:hidden;
+    justify-content:end;
+    margin-left:10px;
+    padding:10px;
+    border-radius: 9px;
+    transition:0.23s ease;
+}
+
+#calculate-reserve-price:hover{
+    background-color: rgb(235, 218, 25);
+    color:rgba(127, 127, 58, 0.881);
+    cursor:pointer;
+}
+
+#card-info{
+    justify-content:center;
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(242, 246, 234);
+    padding: 2px;
+    transition:0.25s; 
+    margin:6px;
+}
+
+#purchase-info{
+    background:rgb(242, 246, 234);
+    border:2px;
+    border-style:ridge;
+    border-color:rgb(38, 170, 26);
+    color:rgba(66, 127, 58, 0.881);
+    position:fixed;
+    width:70%;
+    padding:6px;
+    display:none;
+    transition:0.23s;
+    z-index: 1000;
+}
+
+#purchase-content{
+    background:rgb(230, 240, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    padding:3px;
+}
+#close-modal{
+    border-radius:100%;
+    padding:4px;
+    width:10px;
+    height:10px;
+    transition:0.12s;
+}
+#close-modal:hover{
+    background:rgb(50, 235, 25);
+    cursor:pointer;
+}
