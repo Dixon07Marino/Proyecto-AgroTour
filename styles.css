@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+:root{
+    --tamaño: 20rem;
+}
+
+/* hacer el ejemplo del profe usando flexbox y position, y usando medidas como rem */
+
+body {
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background-color: rgb(110, 110, 255);
+    width: var(--tamaño);
+    height: var(--tamaño);
+
+}
